@@ -19,14 +19,11 @@ function respondBase64 (req, res) {
   res.end(JSON.stringify({ b64: Buffer.from(phrase).toString('base64') }))
 }
 
-<<<<<<< HEAD
 function respondUserAgent (req, res) {
   const ua = req.headers['user-agent']
   res.end(JSON.stringify({ ua }))
 }
 
-=======
->>>>>>> bc9ed63 (feat: add base64 endpoint)
 server.listen(PORT)
 console.log(`Server listening on port ${PORT}`)
 
